@@ -54,7 +54,7 @@ const Form = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/listings",
+        "https://localhost:3000/api/listings",
         payload
       );
       console.log("Saved successfully", response.data);
