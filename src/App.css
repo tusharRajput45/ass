@@ -1,0 +1,87 @@
+::-webkit-scrollbar {
+  width: 2px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #e0e0e0; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b82f6; 
+  border-radius: 5px; 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* App Container */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Heading */
+h1 {
+  font-size: 2.5rem;
+  color: #4A90E2;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Resume Upload Form */
+form {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 2px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+label{
+  padding: 5px 0px 5px 0px;
+}
+/* Input File Field */
+input[type="file"],textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Upload Button */
+button {
+  padding: 10px 20px;
+  align-items: center;
+  background-color: #4A90E2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self:flex-start;
+  width: 150px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  form {
+    padding: 15px 20px;
+  }
+}
